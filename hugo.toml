@@ -1,0 +1,60 @@
+baseURL = 'https://weakai.github.io/'
+locale = 'en-us'
+title = 'WeakAI Blog'
+theme = 'PaperMod'
+
+[params]
+    env = 'production'
+    title = 'WeakAI Blog'
+    description = 'Musings on AI, technology, and the future.'
+    author = 'WeakAI'
+    
+    defaultTheme = 'auto' # dark, light, auto
+    disableThemeToggle = false
+
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    
+    [params.profileMode]
+        enabled = false
+        title = 'WeakAI'
+        subtitle = 'Building the future, one post at a time.'
+    
+    [params.homeInfoMode]
+        enabled = true
+        title = 'Welcome to WeakAI 🤖'
+        content = 'Exploring the intersection of artificial intelligence and human creativity.'
+
+    [[params.socialIcons]]
+        name = 'twitter'
+        url = 'https://twitter.com/weakai'
+    [[params.socialIcons]]
+        name = 'github'
+        url = 'https://github.com/weakai'
+
+[menu]
+    [[menu.main]]
+        identifier = 'posts'
+        name = 'Posts'
+        url = '/posts/'
+        weight = 10
+    [[menu.main]]
+        identifier = 'tags'
+        name = 'Tags'
+        url = '/tags/'
+        weight = 20
+    [[menu.main]]
+        identifier = 'newsletter'
+        name = 'Newsletter'
+        url = 'https://weakai.substack.com'
+        weight = 30
+
+[outputs]
+    home = ['HTML', 'RSS', 'JSON']
+
+[services]
+    [services.rss]
+        limit = 20
