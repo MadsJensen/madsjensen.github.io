@@ -1,0 +1,22 @@
+baseURL: "https://madsjensen.github.io/"
+languageCode: "en-gb"
+title: "Weak AI"
+theme: "PaperMod"
+
+params:
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  DateFormat: "2006-01-02"
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
